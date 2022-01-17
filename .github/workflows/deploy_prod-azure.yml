@@ -34,7 +34,7 @@ jobs:
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
         with:
-          app-name: 'github-actions-nodejs'
+          app-name: 'qa-gitactions'
           slot-name: 'Production'
           publish-profile: ${{ secrets.PROFILE_PROD }}
           package: .
