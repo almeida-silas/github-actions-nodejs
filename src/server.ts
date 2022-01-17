@@ -3,7 +3,7 @@ import express from 'express';
 const app = express();
 
 app.get('/api/', (_req, res) => {
-  res.status(200).json('Hello Word!')
+  res.status(200).json('Hello Word, tests!')
 })
 
 app.post('/api/v1/', async (_req, res) => {
