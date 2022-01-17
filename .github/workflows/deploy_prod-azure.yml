@@ -38,7 +38,7 @@ jobs:
     needs: build
     environment:
       name: 'Production'
-      url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
+      url: ${{ steps.  }}
 
     steps:
       - name: Download artifact from build job
@@ -52,5 +52,5 @@ jobs:
         with:
           app-name: 'qa-gitactions'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_E4B10D016F9E41BE93C1E6109E4411C3 }}
+          publish-profile: ${{ secrets.PROFILE_PROD }}
           package: .
